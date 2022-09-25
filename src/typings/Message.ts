@@ -10,7 +10,7 @@ type RunFunction = (options: RunOptions) => any
 
 export type MessageType = {
   startWith: string
-  regex: RegExp
-  regexError: string
+  regex?: RegExp
+  regexError?: string
   run: RunFunction
 }
